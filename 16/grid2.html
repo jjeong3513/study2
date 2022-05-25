@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .lala{
+            border:1px solid #000;
+            height: 300px;
+            background-color: rgb(247, 229, 193);
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            margin: 50px auto;
+        }
+        .lala>div{
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            background-color: rgb(233, 198, 44);
+        }
+        .lala>div.hoho{
+            background-color: red;
+            grid-column: 1 / span 2; /* 시작이 1이라서 스타트를 설정안해준 것*/
+        }
+        .lala>div.hoho2{
+            background-color: green;
+            grid-column-start: 3; /*세로 3번째 칸에서 시작*/
+            grid-row: 1 / span 2;
+        }
+        .lala div.hoho5{
+            background-color: rgb(207, 71, 191);
+            grid-row-start: 3; /*가로 3번째 칸에서 시작*/
+            grid-column: 1 / span 3; 
+        }
+    </style>
+</head>
+<body>
+    <div class="lala">
+        <div class="hoho">1</div>
+        <div class="hoho2">2</div>
+        <div class="hoho3">3</div>
+        <div class="hoho4">4</div>
+        <div class="hoho5">5</div>
+    </div>
+</body>
+</html>

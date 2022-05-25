@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            border:3px solid #000;
+            height: 300px;
+            background-color: rgb(241, 238, 149);
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            grid-template-rows: auto auto auto;
+            grid-gap: 10px;
+            margin: 50px auto;
+        }
+        .container>div{
+            color: #000;
+            border: 1px solid #000;
+            text-align: center;
+            font-size: 30px;
+        }
+        .container>div:nth-child(8){
+            background-color: red;
+        }
+
+        .container2{
+            border:3px solid #000;
+            height: 300px;
+            background-color: rgb(241, 238, 149);
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            grid-template-rows: auto auto auto;
+            grid-gap: 10px;
+            margin: 50px auto;
+        }
+        .container2>div{
+            color: #000;
+            border: 1px solid #000;
+            text-align: center;
+            font-size: 30px;
+        }
+        .container2>div:nth-child(8){
+            background-color: red;
+            /* grid-row: 1 /span 4;
+            grid-column: 2/ span 4; */
+            grid-area: 1 /2 / 5 /6; /*시작 가로 / 시작 세로/ 끝나는 부분의 가로 / 끝나는 부분의 세로 -> 선부터 1로 시작한다고 생각하기*/
+        }
+
+
+        .container3{
+            border:3px solid #000;
+            height: 300px;
+            background-color: rgb(241, 238, 149);
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            grid-template-rows: auto auto auto;
+            grid-gap: 10px;
+            margin: 50px auto;
+        }
+        .container3>div{
+            color: #000;
+            border: 1px solid #000;
+            text-align: center;
+            font-size: 30px;
+        }
+        .container3>div:nth-child(8){
+            background-color: red;
+            grid-area: 2 / 1 / 4 / 4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+
+    <div class="container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+    </div>
+
+</body>
+</html>
